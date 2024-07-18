@@ -1,17 +1,17 @@
 #!/bin/bash
 
-source /etc/os-release
+# source /etc/os-release
 
-if [ "$ID" == "ubuntu" ]; then
-  REPO_URL="https://download.docker.com/linux/ubuntu"
-  CODENAME="$VERSION_CODENAME"
-elif [ "$ID" == "debian" ]; then
-  REPO_URL="https://download.docker.com/linux/debian"
-  CODENAME="$VERSION_CODENAME"
-else
-  echo "Unsupported distribution: $ID"
-  exit 1
-fi
+# if [ "$ID" == "ubuntu" ]; then
+#   REPO_URL="https://download.docker.com/linux/ubuntu"
+#   CODENAME="$VERSION_CODENAME"
+# elif [ "$ID" == "debian" ]; then
+#   REPO_URL="https://download.docker.com/linux/debian"
+#   CODENAME="$VERSION_CODENAME"
+# else
+#   echo "Unsupported distribution: $ID"
+#   exit 1
+# fi
 
 # Update the package index
 sudo apt-get update
